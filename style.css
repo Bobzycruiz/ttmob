@@ -1,0 +1,172 @@
+::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+}
+body{
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #ffffff, #ffeef6);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+
+.form {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.form form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* height: 100%; */
+  width: 100%;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form form #name, .form form #email, .form form #message {
+  width: 40%;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(32, 32, 32);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  color: rgb(255, 255, 255);
+}
+
+.form form #name:focus, .form form #email:focus, .form form #message:focus {
+  width: 45%;
+}
+
+.form form #btn {
+  position: relative;
+  border: none;
+  background-color: rgb(226, 0, 116);
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid rgb(196, 196, 196);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  font-family:sans-serif;
+  font-weight: 600;
+}
+
+.form form #btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 10px rgb(255, 255, 255),
+ 0 0 10px rgb(255, 255, 255);
+          box-shadow: inset 0 0 10px rgb(255, 255, 255),
+ 0 0 10px rgb(225, 251, 255);
+ border: none;
+ padding: 8px;
+ transition: 200ms;
+ color: white;
+}
+.form .logo img{
+  height: 100px;
+  width: 100px;
+  display:block;
+  margin: 20px auto;
+  /* padding: 20%; */
+  /* border: none; */
+  position: relative;
+  display: flex;
+}
+.form .logo{
+  /* background-color: white; */
+  /* position: relative; */
+  padding-bottom:50px;
+}
+.form .logo h1{
+  margin: auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cop{
+  font-size: large;
+  position: absolute;
+  bottom: 5px;
+  margin: auto;
+  font-size: 14px;
+}
+
+@media only screen and (min-width:280px) {
+  .form .logo img{
+    height: 50px;
+    width: 50px;
+  }
+  .cop{
+    font-size: 10px;
+  }
+  .form .logo h1{
+font-size: 20px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .form .logo img{
+    height: 60px;
+    width: 60px;
+  }
+  .form .logo h1{
+    font-size: 23px;
+      }
+  .cop{
+    font-size: 12px;
+  }
+
+}
+@media only screen and (min-width:768px) {
+  .form .logo img{
+    height: 75px;
+    width: 75px;
+  }
+  .form .logo h1{
+    font-size: 25px;
+      }
+  .cop{
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width:900px) {
+  .form .logo img{
+    height: 90px;
+    width: 90px;
+  }
+  .form .logo h1{
+    font-size: 26px;
+      }
+}
